@@ -2,6 +2,8 @@
 import './App.css';
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
+import Register from './components/Register';
+
 import {useState} from 'react';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 
@@ -26,6 +28,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Login/>}></Route>
           <Route path='/dashboard' element={<Dashboard/>}></Route>
+          <Route path='/register' element={<Register/>}></Route>
         </Routes>
      </Router>
      </div>
